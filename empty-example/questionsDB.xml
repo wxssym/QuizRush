@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<questions>
+    <science>
+        <science_0 difficulty='0'>
+            <question num="0"  question = 'The science is flat_0_0' a1='True' a2='False' correct='True'> </question>
+            <question num="1"  question = 'The science is flat_0_1' a1='True' a2='False' correct='True'> </question>
+            <question num="2"  question = 'The science is flat_0_2' a1='True' a2='False' correct='True'> </question>
+        </science_0>
+        <science_1 difficulty='1'>
+            <question num="0"  question = 'The science is flat_1_0' a1='True' a2='False' a3='False' a4='False' correct='True'> </question>
+            <question num="1"  question = 'The science is flat_1_1' a1='True' a2='False' a3='False' a4='False' correct='True'> </question>
+            <question num="2"  question = 'The science is flat_1_2' a1='True' a2='False' a3='False' a4='False' correct='True'> </question>
+        </science_1>
+        <science_2 difficulty='2'>
+            <question num="0"  question = 'The science is flat_2_0' correct='True'> </question>
+            <question num="1"  question = 'The science is flat_2_1' correct='True'> </question>
+            <question num="2"  question = 'The science is flat_2_2' correct='True'> </question>
+        </science_2>
+    </science>
+    <history>
+        <history_0 difficulty='0'>
+            <question num="0"  question = 'The history is flat_0_0' a1='True' a2='False' correct='True'> </question>
+            <question num="1"  question = 'The history is flat_0_1' a1='True' a2='False' correct='True'> </question>
+            <question num="2"  question = 'The history is flat_0_2' a1='True' a2='False' correct='True'> </question>
+        </history_0>
+        <history_1 difficulty='1'>
+            <question num="0"  question = 'The history is flat_1_0' a1='True' a2='False' a3='False' a4='False' correct='True'> </question>
+            <question num="1"  question = 'The history is flat_1_1' a1='True' a2='False' a3='False' a4='False' correct='True'> </question>
+            <question num="2"  question = 'The history is flat_1_2' a1='True' a2='False' a3='False' a4='False' correct='True'> </question>
+        </history_1>
+        <history_2 difficulty='2'>
+            <question num="0"  question = 'The history is flat_2_0' correct='True'> </question>
+            <question num="1"  question = 'The history is flat_2_1' correct='True'> </question>
+            <question num="2"  question = 'The history is flat_2_2' correct='True'> </question>
+        </history_2>
+    </history>
+    <cinema>
+        <cinema_0 difficulty='0'>
+            <question num="0"  question = 'The cinema is flat_0_0' a1='True' a2='False' correct='True'> </question>
+            <question num="1"  question = 'The cinema is flat_0_1' a1='True' a2='False' correct='True'> </question>
+            <question num="2"  question = 'The cinema is flat_0_2' a1='True' a2='False' correct='True'> </question>
+        </cinema_0>
+        <cinema_1 difficulty='1'>
+            <question num="0"  question = 'The cinema is flat_1_0' a1='True' a2='False' a3='False' a4='False' correct='True'> </question>
+            <question num="1"  question = 'The cinema is flat_1_1' a1='True' a2='False' a3='False' a4='False' correct='True'> </question>
+            <question num="2"  question = 'The cinema is flat_1_2' a1='True' a2='False' a3='False' a4='False' correct='True'> </question>
+        </cinema_1>
+        <cinema_2 difficulty='2'>
+            <question num="0"  question = 'The cinema is flat_2_0' correct='True'> </question>
+            <question num="1"  question = 'The cinema is flat_2_1' correct='True'> </question>
+            <question num="2"  question = 'The cinema is flat_2_2' correct='True'> </question>
+        </cinema_2>
+    </cinema>
+</questions>
