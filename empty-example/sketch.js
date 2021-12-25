@@ -15,7 +15,6 @@ function setup() {
 
 function draw() {
 
-
 }
 
 function plateau_setup (plateau_size,number_of_themes) {
@@ -81,9 +80,11 @@ function title_screen_ui(){
   add_player_input = createInput();
   add_player_input.position(windowWidth/2 - add_player_input.width/2, windowHeight/2);
 
+  
+
   button_addplayer = createButton('submit');
   button_addplayer.position(windowWidth/2 - button_addplayer.width/2, windowHeight/2 + add_player_input.height+15);
-  
-  textSize(32);
-  A = text('Quiz rush ! dev 0.1',windowWidth/2,windowHeight/2);
+  //textSize(32);
+  //A = text('Quiz rush ! dev 0.1',windowWidth/2,windowHeight/2);
 }
+
