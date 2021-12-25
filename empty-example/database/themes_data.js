@@ -1,0 +1,1 @@
+let themes_data_ids = [['science','history','cinema'],[ 'science2', 'hostory2','cinema2']];

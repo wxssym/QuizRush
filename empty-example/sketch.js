@@ -1,16 +1,21 @@
 //Quiz rush
 function preload() {
   questionsDB = loadXML('database/questionsDB.xml');
+  quiz_rush_logo = loadImage('assets/logo.png');
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
+
+
   plateau_setup = new plateau_setup(50,3);
   current_case_num = 0;
+  title_screen_ui();
 }
 
 function draw() {
-  background(51);
+
+
 }
 
 function plateau_setup (plateau_size,number_of_themes) {
@@ -19,9 +24,6 @@ function plateau_setup (plateau_size,number_of_themes) {
     cases_themes_ids [ii] = floor(random(0,number_of_themes));
   };
 };
-
-
-
 
 
 
@@ -69,4 +71,19 @@ function medium_question_ui(){
 
 function hard_question_ui(){
   
+}
+
+function title_screen_ui(){
+  createCanvas(windowWidth, windowHeight)
+  screenratio=windowWidth/windowHeight;
+  background(51);
+  image(quiz_rush_logo, windowWidth/2 - quiz_rush_logo.width/2, 0);
+  add_player_input = createInput();
+  add_player_input.position(windowWidth/2 - add_player_input.width/2, windowHeight/2);
+
+  button_addplayer = createButton('submit');
+  button_addplayer.position(windowWidth/2 - button_addplayer.width/2, windowHeight/2 + add_player_input.height+15);
+  
+  textSize(32);
+  A = text('Quiz rush ! dev 0.1',windowWidth/2,windowHeight/2);
 }
