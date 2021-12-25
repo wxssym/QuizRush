@@ -3,10 +3,6 @@ function preload() {
   questionsDB = loadXML('database/questionsDB.xml');
 }
 
-
-
-
-
 function setup() {
   createCanvas(windowWidth, windowHeight)
   plateau_setup = new plateau_setup(50,3);
@@ -15,19 +11,9 @@ function setup() {
 
 }
 
-
-
-
-
-
 function draw() {
   background(51);
 }
-
-
-
-
-
 
 function plateau_setup (plateau_size,number_of_themes) {
   cases_themes_ids = new Array(plateau_size);
