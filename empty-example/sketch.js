@@ -7,8 +7,6 @@ function setup() {
   createCanvas(windowWidth, windowHeight)
   plateau_setup = new plateau_setup(50,3);
   current_case_num = 0;
-
-
 }
 
 function draw() {
@@ -60,3 +58,15 @@ function case_question_setup(current_case_num,question_difficulty) {
     case_correct = random_case_theme_difficulty_question.getChildren()[1].getContent();
   }
 };
+
+function easy_question_ui(){
+
+}
+
+function medium_question_ui(){
+  
+}
+
+function hard_question_ui(){
+  
+}
