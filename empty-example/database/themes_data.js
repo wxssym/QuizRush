@@ -1,1 +1,2 @@
-let themes_data_ids = [['science','history','cinema'],[ 'science2', 'hostory2','cinema2']];
+let cases_themes_text = ['science','history','cinema'];
+let difficulty_text = ['easy','medium','hard'];
