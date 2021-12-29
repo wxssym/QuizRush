@@ -7,7 +7,7 @@ function preload() {
 function setup() {
   players = [];
   current_case_num = 0;
-  createCanvas(windowWidth, windowHeight)
+
   plateau_setup = new plateau_setup(50,3);
   title_screen_ui();
 }
