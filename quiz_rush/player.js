@@ -1,3 +1,4 @@
+players_names_list = [];
 function player(name){
     this.player_name = name;
     this.player_score = 0;
@@ -9,3 +10,21 @@ function player(name){
     };
 }
 
+function addplayer(){
+    if (add_player_inputbox.value().length < 2 || add_player_inputbox.value().includes("  ")){
+        console.log('write a name in the box');
+    } else {
+        players.push(new player(add_player_inputbox.value()));
+        players_list_title = '<b>Players in the lobby :</b>';
+        players_names_list.push(add_player_inputbox.value());
+        updatePlayersList();
+        T_EnterPlayersNames.html('Ready to start');
+
+      }
+      add_player_inputbox.value('');
+
+  };
+
+function removePlayer(){
+
+};
