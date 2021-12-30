@@ -8,7 +8,7 @@ function setup() {
   players = [];
   current_case_num = 0;
 
-  plateau_setup = new plateau_setup(50,3);
+  plateau_setup = new plateau_setup(50, 3);
   title_screen_ui();
 }
 
@@ -16,26 +16,26 @@ function draw() {
 
 }
 
-function plateau_setup (plateau_size,number_of_themes) {
+function plateau_setup(plateau_size, number_of_themes) {
   cases_themes_ids = new Array(plateau_size);
-  for (let ii = 0; ii < cases_themes_ids.length ; ii++) {
-    cases_themes_ids [ii] = floor(random(0,number_of_themes));
+  for (let ii = 0; ii < cases_themes_ids.length; ii++) {
+    cases_themes_ids[ii] = floor(random(0, number_of_themes));
   };
 };
 
 // Display functions
-function easy_question_ui(){
+function easy_question_ui() {
 
 }
 
-function medium_question_ui(){
-  
+function medium_question_ui() {
+
 }
 
-function hard_question_ui(){
-  
+function hard_question_ui() {
+
 }
 
-function chose_difficulty_ui(){
+function chose_difficulty_ui() {
   removeElements();
 }
