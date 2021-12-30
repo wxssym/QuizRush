@@ -25,7 +25,6 @@ function title_screen_ui() {
 
 //game initialization
 function initgame() {
-  ;
   if (players_names_list.length > 0) {
 
   } else {
