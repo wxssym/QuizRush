@@ -39,6 +39,7 @@ function updatePlayersList(){
       for (ii=0; ii<players_names_list.length; ii++ )
       {
         temp = temp +'P'+ (ii+1).toString()+':'+players_names_list[ii]+'<br>';
+        T_EnterPlayersNames.html('Ready to start');
         T_ListPlayers.html('<b>Players in the lobby :</b>'+'<br>'+temp);
       }
       RemovePlayersBoutton('show');
