@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
-
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +11,26 @@
       margin: 0;
     }
   </style>
-  <script src="p5.js"></script>
-  <xml src="quiz_rush/database/questionsDB.xml"></xml>
-  <script src="quiz_rush/database/themes_data.js"></script>
-  <!--<script src="../addons/p5.sound.js"></script>-->
-  <script src="quiz_rush/sketch.js"></script>
-  <script src="quiz_rush/player.js"></script>
-  <script src="quiz_rush/title_screen.js"></script>
-  <script src="quiz_rush/questions.js"></script>
+  <!-- Libraries scripts -->
+  <script src="library/p5.js"></script>
+
+  <!-- Ressources -->
+  <xml src="database/questionsDB.xml"></xml>
+  <script src="database/data_dictionary.js"></script>
+
+  <!-- Main script -->
+  <script src="sketch.js"></script>
+
+  <!-- Game engine scripts -->
+  <script src="sources/game_questions.js"></script>
+  <script src="sources/game_player.js"></script>
+  <script src="sources/game_initialization.js"></script>
+  
+  <!-- UI scripts -->
+  <script src="sources/ui_main_menu.js"></script>
+
+  <script src="sources/ui_add_players.js"></script>
+
 </head>
 
 <body>

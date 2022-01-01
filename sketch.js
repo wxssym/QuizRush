@@ -1,15 +1,17 @@
 //Quiz rush
 function preload() {
-  questionsDB = loadXML('quiz_rush/database/questionsDB.xml');
-  quiz_rush_logo = loadImage('quiz_rush/assets/logo.png');
+  questionsDB = loadXML('database/questionsDB.xml');
+  quiz_rush_logo = loadImage('assets/logo.png');
 }
 
 function setup() {
+  createCanvas(windowWidth, windowHeight)
+  background(51);
   players = [];
   current_case_num = 0;
 
   plateau_setup = new plateau_setup(50, 3);
-  title_screen_ui();
+  ui_title_screen();
 }
 
 function draw() {
@@ -24,18 +26,22 @@ function plateau_setup(plateau_size, number_of_themes) {
 };
 
 // Display functions
-function easy_question_ui() {
+function ui_easy_question() {
 
 }
 
-function medium_question_ui() {
+function ui_medium_question() {
 
 }
 
-function hard_question_ui() {
+function ui_hard_question() {
 
 }
 
-function chose_difficulty_ui() {
+function ui_chose_difficulty() {
   removeElements();
 }
+
+/* function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+} */
