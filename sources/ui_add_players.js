@@ -1,5 +1,6 @@
 function ui_add_players() {
   //textbox
+  removeElements();
   inputbox_addplayer = createInput();
   inputbox_addplayer.position(windowWidth / 2 - inputbox_addplayer.width / 2, windowHeight / 2);
   inputbox_addplayer.attribute('placeholder', '...');
