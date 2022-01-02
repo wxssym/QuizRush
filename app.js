@@ -2,7 +2,6 @@
 function preload() {
   questionsDB = loadXML('database/questionsDB.xml');
   quiz_rush_logo = loadImage('assets/logo.png');
-  quiz_rush_font = loadFont('assets/fonts/scribble.ttf');
 }
 
 function setup() {
