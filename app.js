@@ -7,7 +7,7 @@ function preload() {
 function setup() {
   // settings object
   
-  settings = new settings(50,51);
+  settings = new settings(20,51);
 
   // players initialisation
   players = [];
