@@ -13,7 +13,8 @@ function player(name) {
 function addPlayer() {
     if (inputbox_addplayer.value().length < 2 || inputbox_addplayer.value().includes("  ")) {
         console.log('write a name in the box');
-    } else {
+    }
+    else {
         players.push(new player(inputbox_addplayer.value()));
         players_list_title = '<b>Players in the lobby :</b>';
         players_names_list.push(inputbox_addplayer.value());
@@ -39,7 +40,8 @@ function updatePlayersList() {
         text_PlayersList.html('<b>Players in the lobby :</b>' + '<br>' + temp);
       }
       RemovePlayersBoutton('show');
-    } else {
+    }
+    else {
       RemovePlayersBoutton('hide');
       text_PlayersList.html('no one added yet');
       text_EnterPlayersNames.html('Enter players names');
