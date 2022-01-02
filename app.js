@@ -5,12 +5,13 @@ function preload() {
 }
 
 function setup() {
+  settings = new settings(50,51);
   createCanvas(windowWidth, windowHeight)
-  background(51);
+  background(settings.background_color);
   players = [];
-  current_case_num = 0;
 
-  plateau_setup = new plateau_setup(50, 3);
+
+
   ui_title_screen();
 }
 
@@ -38,9 +39,7 @@ function ui_hard_question() {
 
 }
 
-function ui_chose_difficulty() {
-  removeElements();
-}
+
 
 /* function windowResized() {
   resizeCanvas(windowWidth, windowHeight);

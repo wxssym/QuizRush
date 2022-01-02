@@ -20,7 +20,6 @@ function addPlayer() {
         updatePlayersList();
         text_EnterPlayersNames.html('Ready to start');
         //alert(inputbox_addplayer.value()+' was added to the list');
-
     }
     inputbox_addplayer.value('');
 
