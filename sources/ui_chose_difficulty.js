@@ -1,7 +1,7 @@
 function ui_chose_difficulty(player_index) {
     removeElements();
     textFont(quiz_rush_font);
-    text_theme_Announcement = createP('<b>'+players[player_index].player_name + ' your question theme is '+cases_themes_text[cases_themes_ids[players[player_index].player_case]]+'</b>' ).style('text-align', CENTER).style('transform', 'translate(-50%)').position(windowWidth / 2, windowHeight / 2 - 50).style('color', '#ffffff');//.style('font-family','scribble');
+    text_theme_Announcement = createP('<b>'+players[player_index].player_name + ' your question theme is '+cases_themes_text[cases_themes_ids[players[player_index].player_case]]+'</b>' ).style('text-align', CENTER).style('transform', 'translate(-50%)').position(windowWidth / 2, windowHeight / 2 - 50).style('color', '#ffffff');
     difficulty_selector();
 
 
