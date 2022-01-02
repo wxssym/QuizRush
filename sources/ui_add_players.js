@@ -10,6 +10,7 @@ function ui_add_players() {
   button_addplayer = createButton('add player').position(windowWidth / 2 - button_start.width, windowHeight / 2 + inputbox_addplayer.height + 15).mousePressed(addPlayer);
 
   //texts
+  textFont(quiz_rush_font);
   text_EnterPlayersNames = createElement('h3', 'Enter players names').style('text-align', CENTER).style('transform', 'translate(-50%)').position(windowWidth / 2, windowHeight / 2 - 50).style('color', '#ffffff');
   text_PlayersList = createP('no one added yet').style('text-align', CENTER).style('transform', 'translate(-50%)').position(windowWidth / 2, windowHeight / 2 + 60).style('color', '#ffffff');
   updatePlayersList();
@@ -29,5 +30,4 @@ function RemovePlayersBoutton(input) {
       button_removePlayer.remove();
     }
   }
-
 };
