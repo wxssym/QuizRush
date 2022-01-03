@@ -24,13 +24,13 @@ function draw() {
 
 // Display functions
 function ui_easy_question() {
-
+    console.log('easy is selected');
 }
 
 function ui_medium_question() {
-
+  console.log('medium is selected');
 }
 
 function ui_hard_question() {
-
+  console.log('hard is selected');
 }

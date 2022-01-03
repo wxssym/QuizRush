@@ -21,8 +21,8 @@ function ui_add_players() {
 function RemovePlayersBoutton(input) {
   this.input = input;
   if (input == 'show') {
-    button_removePlayer = createButton('remove player')
-    button_removePlayer.position(windowWidth / 2 - button_removePlayer.width / 2, windowHeight / 2 + 200).mousePressed(removePlayer);
+    button_removePlayer = createButton('remove player').style('transform', 'translate(-50%,-50%)');
+    button_removePlayer.position(windowWidth / 2, windowHeight / 2 + 200).mousePressed(ui_remove_player);
   } 
   else if (input == 'hide') {
     if (typeof button_removePlayer != 'undefined') {
