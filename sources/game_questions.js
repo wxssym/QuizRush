@@ -1,6 +1,6 @@
 function case_question_setup(current_case_num,question_difficulty) {
     case_theme = cases_themes_ids [current_case_num];
-    let question_elements = [];
+    question_elements = [];
     switch (question_difficulty){
       case 0:
         theme_difficulty_questions = questionsDB.getChildren()[case_theme].getChildren()[question_difficulty].getChildren();
