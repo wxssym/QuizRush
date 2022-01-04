@@ -2,6 +2,7 @@ function ui_title_screen(){
     // canvas creation
     createCanvas(windowWidth, windowHeight)
     background(settings.background_color);
+    players=[];
     // canvas image
     image(quiz_rush_logo, windowWidth / 2 - quiz_rush_logo.width / 2, 0);
     removeElements();

@@ -1,49 +1,38 @@
-function ui_easy_question() {
+async function ui_easy_question() {
+    difficulty = 0;
+    case_question = await Question(players[player_index].player_case,0);
     removeElements();
-    question = case_question_setup(players[player_index].player_case,0);
-    text_EnterPlayersNames = createElement('h3', question[0]+' ?').style('text-align', CENTER).style('transform', 'translate(-50%,-50%)').position(windowWidth / 2, windowHeight / 2 -50).style('color', '#ffffff');
-    button_answer1 = createButton(question[1]).style('transform', 'translate(-100%)').style('width','150px').style('height','50px').position(windowWidth / 2, windowHeight / 2);
-    button_answer1.mouseClicked(easy_answer1_selected);
-    button_answer2 = createButton(question[2]).style('transform', 'translate(0%)').style('width','150px').style('height','50px').position(windowWidth / 2, windowHeight / 2);
-    button_answer2.mouseClicked(easy_answer2_selected);
     playerCard(player_index,'bottom');
+    text_Question = createP('...').style('text-align', CENTER).style('transform', 'translate(-50%,-50%)').position(windowWidth / 2, windowHeight / 2 -50).style('color', '#ffffff');
+    text_Question.html(await case_question["question"]).style('text-align', CENTER).style('transform', 'translate(-50%,-50%)').position(windowWidth / 2, windowHeight / 2 -50).style('color', '#ffffff');
+    button_E_answer = [];
+    button_E_answer[0] = createButton('True').style('transform', 'translate(-100%)').style('width','150px').style('height','50px').position(windowWidth / 2, windowHeight / 2);
+    button_E_answer[0].mouseClicked(easy_answer0_selected);
+    button_E_answer[1] = createButton('False').style('transform', 'translate(0%)').style('width','150px').style('height','50px').position(windowWidth / 2, windowHeight / 2);
+    button_E_answer[1].mouseClicked(easy_answer1_selected);
 }
+
+function easy_answer0_selected(){
+    for (let ii=0; ii<2; ii++){
+        ButtonisCorrect(button_E_answer[ii],ii);
+    }
+    if (correct_button_index == 0){
+        isCorrect = 1;
+    } else{
+        isCorrect = 0;
+    }
+    myTimeout =setTimeout(answer_verification,1000);
+}
+
 
 function easy_answer1_selected(){
-    if (question[1] === question[3] ){ //correct
-        button_answer1.style('background-color','green'); 
-        button_answer1.attribute('disabled','disabled');
-        button_answer2.style('background-color','red'); 
-        button_answer2.attribute('disabled','disabled');
+    for (let ii=0; ii<2; ii++){
+        ButtonisCorrect(button_E_answer[ii],ii);
+    }
+    if (correct_button_index == 1){
         isCorrect = 1;
-        myTimeout =setTimeout(answer_verification,1000);
-    }
-    else if (question[1] != question[3]){
-        button_answer1.style('background-color','red');
-        button_answer1.attribute('disabled','disabled');
-        button_answer2.style('background-color','green');
-        button_answer2.attribute('disabled','disabled');
+    } else{
         isCorrect = 0;
-        myTimeout =setTimeout(answer_verification,1000);
     }
-
-}
-
-function easy_answer2_selected(){
-    if (question[2] === question[3] ){ //correct
-        button_answer1.style('background-color','red'); 
-        button_answer1.attribute('disabled','disabled');
-        button_answer2.style('background-color','green');
-        button_answer2.attribute('disabled','disabled');
-        isCorrect = 1;
-        myTimeout =setTimeout(answer_verification,1000);
-    }
-    else if (question[2] != question[3] ){ //false
-        button_answer1.style('background-color','green');
-        button_answer1.attribute('disabled','disabled');
-        button_answer2.style('background-color','red');
-        button_answer2.attribute('disabled','disabled');
-        isCorrect = 0;
-        myTimeout =setTimeout(answer_verification,1000);
-    }
+    myTimeout =setTimeout(answer_verification,1000);
 }

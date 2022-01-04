@@ -63,14 +63,14 @@ function updatePlayersList() {
       player_avatar = players[player_index].player_icon('center');
       text_player_card_name = createP('<b>'+players[player_index].player_name+'</b>').style('transform', 'translate(-50%,-50%)').style('color', '#ffffff');
       text_player_card_name.position(windowWidth/2, windowHeight/2);
-      text_player_current_case = createP('you are at the case :'+players[player_index].player_case).style('transform', 'translate(-50%,-50%)').style('color', '#ffffff');
+      text_player_current_case = createP('CURRENT CASE:'+players[player_index].player_case).style('transform', 'translate(-50%,-50%)').style('color', '#ffffff');
       text_player_current_case.position(windowWidth/2, windowHeight/2 + text_player_card_name.height);
     }
     else if (card_position == 'bottom'){
       player_avatar = players[player_index].player_icon('bottom');
       text_player_card_name = createP('<b>'+players[player_index].player_name+'</b>').style('transform', 'translate(-50%,-50%)').style('color', '#ffffff');
       text_player_card_name.position(windowWidth/2, windowHeight/2 + 220);
-      text_player_current_case = createP('you are at the case :'+players[player_index].player_case).style('transform', 'translate(-50%,-50%)').style('color', '#ffffff');
+      text_player_current_case = createP('CASE :'+players[player_index].player_case).style('transform', 'translate(-50%,-50%)').style('color', '#ffffff');
       text_player_current_case.position(windowWidth/2, windowHeight/2 + 220 + text_player_card_name.height);
     }
   };

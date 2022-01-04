@@ -7,7 +7,7 @@ function initGame() {
     else if (total_players>0){
       player_index = 0;
       current_case_num = 0;
-      plateau_setup(settings.number_of_cases, 2);
+      plateau_setup(settings.number_of_cases, settings.game_categories.length);
       ui_chose_difficulty(player_index);
     }
   };
@@ -15,7 +15,8 @@ function initGame() {
 
   function plateau_setup(plateau_size, number_of_themes) {
     cases_themes_ids = new Array(plateau_size);
-    for (let ii = 0; ii < cases_themes_ids.length; ii++) {
-      cases_themes_ids[ii] = floor(random(0, number_of_themes));
+    cases_themes_names = new Array(plateau_size);
+    for (let ii = 0; ii < settings.game_categories.length; ii++) {
+      cases_themes_ids[ii]= settings.game_categories[floor(random(0, number_of_themes))];
     };
   };
