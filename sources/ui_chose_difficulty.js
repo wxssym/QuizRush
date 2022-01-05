@@ -1,12 +1,12 @@
 function ui_chose_difficulty(player_index) {
     removeElements();
-    text_theme_Announcement = createP('<b>'+players[player_index].player_name + ' your question theme is '+cases_themes_ids[players[player_index].player_case].name+'</b>' ).style('text-align', CENTER).style('transform', 'translate(-50%,-50%)').position(windowWidth / 2, windowHeight / 2 - 50).style('color', '#ffffff');
+    text_theme_Announcement = createP('<b>'+players[player_index].player_name + ' your question theme is '+cases_themes_ids[players[player_index].player_case].name+'</b>' ).style('text-align', CENTER).style('transform', 'translate(-50%,-50%)').position(windowWidth / 2, windowHeight / 2 - 50).style('color', '#ffffff').class('buttons_style');
     playerCard(player_index,'bottom');
     difficulty_selector();
 }
 
 function difficulty_selector(){
-  selector_difficulty = createSelect().style('transform', 'translate(-50%,-50%)');
+  selector_difficulty = createSelect().style('transform', 'translate(-50%,-50%)').class('buttons_style');
   selector_difficulty.option('select the difficulty');
   selector_difficulty.option('easy');
   selector_difficulty.option('medium');
