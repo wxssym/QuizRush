@@ -7,7 +7,6 @@ function selector_difficulty_Onchange(){
     }
     else if (selector_difficulty.value() == 'hard'){
         ui_hard_question(player_index);
-        difficulty = 2;
     } 
     else {}
 }

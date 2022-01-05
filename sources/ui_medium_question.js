@@ -65,7 +65,7 @@ function medium_answer3_selected(){
     } else{
         isCorrect = 0;
     }
-    myTimeout =setTimeout(answer_verification,1000);
+    myTimeout = setTimeout(answer_verification,1000);
 }
 
 

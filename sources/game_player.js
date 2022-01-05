@@ -10,13 +10,13 @@ function player(name) {
     this.player_icon = function (image_position){
       if(image_position=='center'){
         this.IconUrl = 'https://avatars.dicebear.com/api/croodles-neutral/'+this.player_name+'.svg?size=50&background=%23ffea00';
-        this.img_playerIcon = createImg(this.IconUrl,this.player_name+' icon').style('transform', 'translate(-50%,-50%)');
-        this.img_playerIcon.position(windowWidth/2, windowHeight/2 -20);
+        this.img_playerIcon = createImg(this.IconUrl,this.player_name+' icon').style('transform', 'translate(-50%,-50%)').class('buttons_style');
+        this.img_playerIcon.position(windowWidth/2, windowHeight/2 -20).class('buttons_style');
       }
       else{
         this.IconUrl = 'https://avatars.dicebear.com/api/croodles-neutral/'+this.player_name+'.svg?size=50&background=%23ffea00';
-        this.img_playerIcon = createImg(this.IconUrl,this.player_name+' icon').style('transform', 'translate(-50%,-50%)');
-        this.img_playerIcon.position(windowWidth/2, windowHeight/2 + 200);
+        this.img_playerIcon = createImg(this.IconUrl,this.player_name+' icon').style('transform', 'translate(-50%,-50%)').class('buttons_style');
+        this.img_playerIcon.position(windowWidth/2, windowHeight/2 + 200).class('buttons_style');
       }
 
     }
@@ -24,7 +24,7 @@ function player(name) {
 
 function addPlayer() {
     if (inputbox_addplayer.value().length < 2 || inputbox_addplayer.value().includes("  ")) {
-        console.log('write a name in the box');
+        alert('Pro tip: enter something before')
     }
     else {
         players.push(new player(inputbox_addplayer.value()));
@@ -32,7 +32,7 @@ function addPlayer() {
 
         players_list_title = '<b>Players in the lobby :</b>';
         updatePlayersList();
-        text_EnterPlayersNames.html('Ready to start');
+        text_EnterPlayersNames.html('Ready to start').class('buttons_style');
     }
     inputbox_addplayer.value('');
 
@@ -52,8 +52,8 @@ function updatePlayersList() {
     }
     else {
       RemovePlayersBoutton('hide');
-      text_PlayersList.html('no one added yet');
-      text_EnterPlayersNames.html('Enter players names');
+      text_PlayersList.html('no one added yet').class('buttons_style');
+      text_EnterPlayersNames.html('Enter players names').class('buttons_style');
     }
   };
 
@@ -62,15 +62,15 @@ function updatePlayersList() {
     if (card_position == 'center'){
       player_avatar = players[player_index].player_icon('center');
       text_player_card_name = createP('<b>'+players[player_index].player_name+'</b>').style('transform', 'translate(-50%,-50%)').style('color', '#ffffff');
-      text_player_card_name.position(windowWidth/2, windowHeight/2);
-      text_player_current_case = createP('CURRENT CASE:'+players[player_index].player_case).style('transform', 'translate(-50%,-50%)').style('color', '#ffffff');
-      text_player_current_case.position(windowWidth/2, windowHeight/2 + text_player_card_name.height);
+      text_player_card_name.position(windowWidth/2, windowHeight/2).class('buttons_style');
+      text_player_current_case = createP('CURRENT CASE: '+players[player_index].player_case).style('transform', 'translate(-50%,-50%)').style('color', '#ffffff');
+      text_player_current_case.position(windowWidth/2, windowHeight/2 + text_player_card_name.height).class('buttons_style');
     }
     else if (card_position == 'bottom'){
       player_avatar = players[player_index].player_icon('bottom');
       text_player_card_name = createP('<b>'+players[player_index].player_name+'</b>').style('transform', 'translate(-50%,-50%)').style('color', '#ffffff');
       text_player_card_name.position(windowWidth/2, windowHeight/2 + 220);
-      text_player_current_case = createP('CASE :'+players[player_index].player_case).style('transform', 'translate(-50%,-50%)').style('color', '#ffffff');
+      text_player_current_case = createP('CASE: '+players[player_index].player_case).style('transform', 'translate(-50%,-50%)').style('color', '#ffffff');
       text_player_current_case.position(windowWidth/2, windowHeight/2 + 220 + text_player_card_name.height);
     }
   };

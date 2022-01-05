@@ -1,8 +1,8 @@
 function ui_remove_player(){
     removeElements();
-    selection_removePlayer = createSelect().style('transform', 'translate(-50%,-50%)');
+    selection_removePlayer = createSelect().style('transform', 'translate(-50%,-50%)').class('buttons_style');
     selection_removePlayer.position(windowWidth / 2, windowHeight / 2);
-    selection_removePlayer.option('select a player to remove');
+    selection_removePlayer.option('select a player to remove').class('buttons_style');
     for (let ii = 0; ii<players.length;ii++){
         selection_removePlayer.option(players[ii].player_name);
     };
