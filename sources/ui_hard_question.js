@@ -7,7 +7,7 @@ async function ui_hard_question() {
     text_Question.html(await case_question["question"]).style('text-align', CENTER).style('transform', 'translate(-50%,-50%)').position(windowWidth / 2, windowHeight / 2 -50).style('color', '#ffffff');
     inputbox_HardAnswer = createInput();
     inputbox_HardAnswer.position(windowWidth / 2 - inputbox_HardAnswer.width / 2, windowHeight / 2);
-    inputbox_HardAnswer.attribute('placeholder', '...');
+    inputbox_HardAnswer.attribute('placeholder', 'Enter your answer here');
     button_submit = createButton('SUBMIT').style('transform', 'translate(-50%,+50%)').position(windowWidth / 2, windowHeight / 2 + 15).class('buttons_style');
     button_submit.mouseClicked(hard_answer_submited);
 }
