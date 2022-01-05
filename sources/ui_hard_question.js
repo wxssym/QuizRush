@@ -27,14 +27,14 @@ function hard_answer_submited(){
         isCorrect = 1;
         inputbox_HardAnswer.remove();
         button_submit.remove();
-        inputbox_HardAnswer = createP('<b> CORRECT : ' + case_question["correct_answer"]+'</b>').style('text-align', CENTER).style('transform', 'translate(-50%,-50%)').style('color', '#00d900').class('buttons_style');
+        inputbox_HardAnswer = createP('<b>CORRECT: ' + case_question["correct_answer"]+'</b>').style('text-align', CENTER).style('transform', 'translate(-50%,-50%)').style('color', '#00d900').class('buttons_style');
         inputbox_HardAnswer.position(windowWidth / 2 , windowHeight / 2);
 
     } else {
         isCorrect = 0;
         inputbox_HardAnswer.remove();
         button_submit.remove();
-        inputbox_HardAnswer = createP('<b> FALSE :' + case_question["correct_answer"]+'</b>').style('text-align', CENTER).style('transform', 'translate(-50%,-50%)').style('color', '#ff4400').class('buttons_style');
+        inputbox_HardAnswer = createP('<b>FALSE: ' + case_question["correct_answer"]+'</b>').style('text-align', CENTER).style('transform', 'translate(-50%,-50%)').style('color', '#ff4400').class('buttons_style');
         inputbox_HardAnswer.position(windowWidth / 2 , windowHeight / 2);
     };
     myTimeout =setTimeout(answer_verification,2000);
