@@ -1,61 +1,12 @@
 <!DOCTYPE html>
 <html lang="">
-<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz rush</title>
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-    }
-    .buttons_style{
-      display: block;
-      animation-duration: 1s;
-      animation-name: fadeInFromNone;
-      animation-fill-mode: forwards;
-      -webkit-animation-duration: 1s;
-      -webkit-animation-name: fadeInFromNone;
-      -webkit-animation-fill-mode: forwards;
-      -ms-animation-duration: 1s;
-      -ms-animation-name: fadeInFromNoneIE;
-      -ms-animation-fill-mode: forwards;
-    }
-      @-webkit-keyframes fadeInFromNone {
-          0% {
-              opacity: 0
-          }
-          1% {
-              opacity: 0
-          }
-          100% {
-              opacity: 1
-          }
-      }
-      @keyframes fadeInFromNoneIE {
-          0% {
-              opacity: 0
-          }
-          1% {
-              opacity: 0
-          }
-          100% {
-              opacity: 1
-          }
-      }
-      @keyframes fadeInFromNone {
-          0% {
-              opacity: 0
-          }
-          1% {
-              opacity: 0
-          }
-          100% {
-              opacity: 1
-          }
-      }
-  </style>
+  <link href="style.css" rel="stylesheet">
+
   <!-- Libraries scripts -->
   <script src="library/p5.js"></script>
   <!-- Ressources -->
@@ -86,8 +37,9 @@
 </head>
 
 <body>
-  <main>
-  </main>
+    <main id="main" class="main_style">
+        
+    </main>
 </body>
 
 </html>

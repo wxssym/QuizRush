@@ -20,6 +20,9 @@ function draw() {
 
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 
 
 // Display functions

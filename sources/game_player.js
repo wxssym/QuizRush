@@ -32,7 +32,7 @@ function addPlayer() {
 
         players_list_title = '<b>Players in the lobby :</b>';
         updatePlayersList();
-        text_EnterPlayersNames.html('Ready to start').class('buttons_style');
+        text_EnterPlayersNames.html('Ready to start').class('players_list');
     }
     inputbox_addplayer.value('');
 
@@ -45,15 +45,15 @@ function updatePlayersList() {
     if (players.length > 0) {
       for (ii = 0; ii < players.length; ii++) {
         temp = temp + 'P' + (ii + 1).toString() + ':' + players_names_list[ii] + '<br>';
-        text_EnterPlayersNames.html('Ready to start');
-        text_PlayersList.html('<b>Players in the lobby :</b>' + '<br>' + temp);
+        text_EnterPlayersNames.html('Ready to start').class('players_list');
+        text_PlayersList.html('<b>Players in the lobby :</b>' + '<br>' + temp).class('players_list');
       }
       RemovePlayersBoutton('show');
     }
     else {
       RemovePlayersBoutton('hide');
-      text_PlayersList.html('no one added yet').class('buttons_style');
-      text_EnterPlayersNames.html('Enter players names').class('buttons_style');
+      text_PlayersList.html('no one added yet').class('players_list');
+      text_EnterPlayersNames.html('Enter players names').class('players_list');
     }
   };
 
