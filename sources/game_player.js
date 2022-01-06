@@ -9,12 +9,12 @@ function player(name) {
 
     this.player_icon = function (image_position){
       if(image_position=='center'){
-        this.IconUrl = 'https://avatars.dicebear.com/api/croodles-neutral/'+this.player_name+'.svg?size=50&background=%23ffea00';
+        this.IconUrl = 'https://avatars.dicebear.com/api/croodles-neutral/'+this.player_name+'.svg?size=50&background=%23f0c400';
         this.img_playerIcon = createImg(this.IconUrl,this.player_name+' icon').style('transform', 'translate(-50%,-50%)').class('buttons_style');
         this.img_playerIcon.position(windowWidth/2, windowHeight/2 -20).class('buttons_style');
       }
       else{
-        this.IconUrl = 'https://avatars.dicebear.com/api/croodles-neutral/'+this.player_name+'.svg?size=50&background=%23ffea00';
+        this.IconUrl = 'https://avatars.dicebear.com/api/croodles-neutral/'+this.player_name+'.svg?size=50&background=%23f0c400';
         this.img_playerIcon = createImg(this.IconUrl,this.player_name+' icon').style('transform', 'translate(-50%,-50%)').class('buttons_style');
         this.img_playerIcon.position(windowWidth/2, windowHeight/2 + 200).class('buttons_style');
       }
