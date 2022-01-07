@@ -1,7 +1,6 @@
 function ui_title_screen(){
     // canvas creation
     //createCanvas(windowWidth, windowHeight);
-    noCanvas();
     players=[];
 
     removeElements();

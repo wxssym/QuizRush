@@ -15,9 +15,11 @@ function ui_add_players() {
 
 
   //texts
-  text_PlayersList = createP('no one added yet').class('players_list').parent('div_addplayer').class('players_list');
-  updatePlayersList();
+  div_addedplayers = createDiv().id("div_addedplayers").class("div_addedplayers_list").parent("div_addplayer");
+  text_PlayersList = createP('no one added yet').parent('div_addedplayers').class('players_list');
 
+  button_removePlayer = createButton('remove player').parent('div_addplayer').class('buttons').mousePressed(ui_remove_player);
+  updatePlayersList();
 
 }
 
@@ -25,12 +27,11 @@ function ui_add_players() {
 function RemovePlayersBoutton(input) {
   this.input = input;
   if (input == 'show') {
-    button_removePlayer = createButton('remove player').style('transform', 'translate(-50%,-50%)').class('buttons');
-    button_removePlayer.position(windowWidth / 2, windowHeight / 2 + 200).mousePressed(ui_remove_player);
+    button_removePlayer.show();
   } 
   else if (input == 'hide') {
     if (typeof button_removePlayer != 'undefined') {
-      button_removePlayer.remove();
+      button_removePlayer.hide();
     }
   }
 };

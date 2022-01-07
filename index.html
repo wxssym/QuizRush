@@ -8,6 +8,11 @@
 
   <!-- Libraries scripts -->
   <script src="library/p5.js"></script>
+  <script>
+    function refreshPage(){
+      window.location.reload();
+    } 
+  </script>
   <!-- Ressources -->
   <xml src="database/questionsDB.xml"></xml>
   <script src="database/data_dictionary.js"></script>
@@ -37,7 +42,11 @@
 
 <body>
     <main id="main" class="main_style">
-        
+        <div id="sidebar" class="sidebar">
+          <img id="logo" src="assets/logo.png" alt="Main menu" onClick="refreshPage()" class="logo"></img>
+        </div>
+        <p id="legal_claim" class="legal_claim">This is a game project made by wvssym#1516, feel free to report any error found or bug, this is
+           a self made project to try out P5JS library capabilities</p>
     </main>
 </body>
 

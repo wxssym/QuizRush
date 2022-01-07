@@ -36,10 +36,12 @@ function nextplayer (){
 
 function winner (){
     removeElements();
-    text_winner = createElement('h2', 'the winner is :'+ players[player_index].player_name +' with a score of :'+players[player_index].player_case );
-    text_winner.style('text-align', CENTER).style('transform', 'translate(-50%)').position(windowWidth / 2, windowHeight / 2 + 50).style('color', '#ffffff');
+    /* winner_div = createDiv().id('winner_div').class("winner_div_style").parent("main"); */
     playerCard(player_index,'center');
-    myTimeout = setTimeout(ui_title_screen,2000);
+    text_winner = createElement('h2', 'the winner is :'+ players[player_index].player_name +' with a score of :'+players[player_index].player_case ).parent("player_card_mid").class('winner_announcement_style');
+    players_names_list = [];
+    players = [];
+    myTimeout = setTimeout(ui_title_screen,3000);
     
 }
 

@@ -5,17 +5,19 @@ async function ui_medium_question() {
     isCorrect = NaN;
     correct_button_index = NaN;
     playerCard(player_index,'bottom');
-    text_Question = createP('...').style('text-align', CENTER).style('transform', 'translate(-50%,-50%)').position(windowWidth / 2, windowHeight / 2).style('color', '#ffffff');
-    text_Question.html(await case_question["question"]).style('text-align', CENTER).style('transform', 'translate(-50%,-50%)').position(windowWidth / 2, windowHeight / 2 -50).style('color', '#ffffff');
+    div_main_menu = createDiv().id("medium_div").class("medium_div_style").parent("main");
+    text_Question = createP('...').parent('medium_div').class('questions_style');
+    text_Question.html(await case_question["question"]).parent('medium_div').class('questions_style');
     buttons_medium();
     button_M_answer = [];
-    button_M_answer[0] = createButton(buttons_answers[0]).style('transform', 'translate(-100%,+50%)').style('width','150px').style('height','50px').position(windowWidth / 2, windowHeight / 2).class('buttons_style');
+    div_addplayer = createDiv().id("medium_buttons_div").class("medium_buttons_div_style").parent("medium_div");
+    button_M_answer[0] = createButton(buttons_answers[0]).parent('medium_buttons_div').class('medium_buttons_style');
     button_M_answer[0].mouseClicked(medium_answer0_selected);
-    button_M_answer[1] = createButton(buttons_answers[1]).style('transform', 'translate(0%,+50%)').style('width','150px').style('height','50px').position(windowWidth / 2, windowHeight / 2).class('buttons_style');
+    button_M_answer[1] = createButton(buttons_answers[1]).parent('medium_buttons_div').class('medium_buttons_style');
     button_M_answer[1].mouseClicked(medium_answer1_selected);
-    button_M_answer[2]= createButton(buttons_answers[2]).style('transform', 'translate(-100%,+150%)').style('width','150px').style('height','50px').position(windowWidth / 2, windowHeight / 2).class('buttons_style');
+    button_M_answer[2]= createButton(buttons_answers[2]).parent('medium_buttons_div').class('medium_buttons_style');
     button_M_answer[2].mouseClicked(medium_answer2_selected);
-    button_M_answer[3]= createButton(buttons_answers[3]).style('transform', 'translate(0%,+150%)').style('width','150px').style('height','50px').position(windowWidth / 2, windowHeight / 2).class('buttons_style');
+    button_M_answer[3]= createButton(buttons_answers[3]).parent('medium_buttons_div').class('medium_buttons_style');
     button_M_answer[3].mouseClicked(medium_answer3_selected);
 
 }
