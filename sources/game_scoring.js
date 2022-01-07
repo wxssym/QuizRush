@@ -46,7 +46,7 @@ function winner (){
 }
 
 function ButtonisCorrect(Object,ii){
-    if (Object.elt.innerText === case_question["correct_answer"]) {
+    if (Object.elt.innerText == case_question["correct_answer"]) {
         object = Object.style('background-color','#00d900');
         object = object.attribute('disabled','disabled');
         correct_button_index = ii;
