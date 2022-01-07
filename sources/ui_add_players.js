@@ -1,6 +1,8 @@
 function ui_add_players() {
   //textbox
   removeElements();
+  players = [];
+  
   div_addplayer = createDiv().id("div_addplayer").class("div_addplayer_style").parent("main");
 
   text_EnterPlayersNames = createP('Enter players names').class('players_list').parent('div_addplayer');

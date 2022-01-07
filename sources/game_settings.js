@@ -1,6 +1,5 @@
 function settings(number_of_cases) {
     this.number_of_cases = number_of_cases;
-    this.background_color = 51;
     this.difficulty_text = {0:'easy',1:'medium',2:'hard'};
     this.Api_categories_url = 'https://opentdb.com/api_category.php';
     this.categories_data = async function (){

@@ -1,7 +1,7 @@
 function ui_remove_player(){
     removeElements();
-    selection_removePlayer = createSelect().style('transform', 'translate(-50%,-50%)').class('dropDown');
-    selection_removePlayer.position(windowWidth / 2, windowHeight / 2);
+    div_remplayer = createDiv().id("div_remplayer").class("div_remplayer_style").parent("main");
+    selection_removePlayer = createSelect().class('dropDown').parent('div_remplayer');
     selection_removePlayer.option('select a player to remove');
     for (let ii = 0; ii<players.length;ii++){
         selection_removePlayer.option(players[ii].player_name);
