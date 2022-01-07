@@ -56,16 +56,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.buttons{
-    width : 200px;
-    height: 30px;
-    border: none;
-    border-radius: 4px;
-    color: rgb(49, 49, 49);
-    background-color: rgb(240, 196, 0);
-    margin: 4px;
-    cursor: pointer;
-}
+
 
 .textBox{
     width : 404px;
@@ -173,32 +164,13 @@ body {
     justify-content: center;
 }
 
-.easy_true_false_buttons_style{
-    width : 200px;
-    height: 30px;
-    border: none;
-    border-radius: 4px;
-    color: rgb(49, 49, 49);
-    background-color: rgb(240, 196, 0);
-    margin: 4px;
-    cursor: pointer;
-}
+
 
 .questions_style{
     text-align: center;
     color: rgb(223,223,223);
 }
 
-.medium_buttons_style{
-    width : 200px;
-    height: 60px;
-    border: none;
-    border-radius: 4px;
-    color: rgb(49, 49, 49);
-    background-color: rgb(240, 196, 0);
-    margin: 4px;
-    cursor: pointer;
-}
 
 .medium_div_style{
     position: relative;
@@ -315,4 +287,59 @@ body {
 .winner_announcement_style{
     text-align: center;
     color: rgb(223,223,223);
+}
+
+.buttons{
+    width : 200px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    color: rgb(49, 49, 49);
+    background-color: rgb(240, 196, 0);
+    margin: 4px;
+    cursor: pointer;
+    transition: ease-out 0.2s;
+}
+
+.buttons:hover{
+    color :  rgb(240, 196, 0);
+    background-color: rgb(49,49,49);
+    border : 1px solid rgb(240, 196, 0);
+}
+
+.easy_true_false_buttons_style{
+    width : 200px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    color: rgb(49, 49, 49);
+    background-color: rgb(240, 196, 0);
+    margin: 4px;
+    cursor: pointer;
+    transition: ease-out 0.2s;
+}
+
+.easy_true_false_buttons_style:hover{
+    color :  rgb(240, 196, 0);
+    background-color: rgb(49,49,49);
+    border : 1px solid rgb(240, 196, 0);
+}
+
+
+.medium_buttons_style{
+    width : 200px;
+    height: 60px;
+    border: none;
+    border-radius: 4px;
+    color: rgb(49, 49, 49);
+    background-color: rgb(240, 196, 0);
+    margin: 4px;
+    cursor: pointer;
+    transition: ease-out 0.2s;
+}
+
+.medium_buttons_style:hover{
+    color :  rgb(240, 196, 0);
+    background-color: rgb(49,49,49);
+    border : 1px solid rgb(240, 196, 0);
 }
