@@ -1,7 +1,6 @@
 //Quiz rush
 function preload() {
   questionsDB = loadXML('database/questionsDB.xml');
-  quiz_rush_logo = loadImage('assets/logo.png');
 }
 
 function setup() {

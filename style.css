@@ -12,6 +12,9 @@ body {
 }
 
 .logo{
+    height:90px;
+    width:200px;
+    position: center;
     margin-top:8px;
     cursor: pointer;
 }
