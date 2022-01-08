@@ -17,7 +17,7 @@ function hard_answer_submited(){
     correct_words = 0;
     player_hard_answer = [];
     player_hard_answer = inputbox_HardAnswer.value().toUpperCase().split(' ');
-    correct_hard_answer = case_question["correct_answer"].toUpperCase().split(' ');
+    correct_hard_answer = case_question["correct_answer"].split(',').join("").toUpperCase().split(' ');
     for (let ii=0 ; ii < player_hard_answer.length ; ii++)
     {
         if (correct_hard_answer.includes(player_hard_answer[ii])){
