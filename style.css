@@ -96,11 +96,13 @@ body {
     background-color:rgb(49, 49, 49);
     width : 4px;
     height: 0px;
+    
     /* display: none; */ /* for Chrome, Safari, and Opera */
 }
 *::-webkit-scrollbar-thumb{
     background:rgb(240, 196, 0);
     border-radius: 2px;
+
 }
 *::-webkit-scrollbar-track-piece{
     background-color: rgb(49, 49, 49);
@@ -343,6 +345,7 @@ body {
     color :  rgb(240, 196, 0);
     background-color: rgb(49,49,49);
     border : 1px solid rgb(240, 196, 0);
+    
 }
 
 .div_remplayer_style{

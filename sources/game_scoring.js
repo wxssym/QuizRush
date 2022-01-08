@@ -46,12 +46,12 @@ function winner (){
 }
 
 function ButtonisCorrect(Object,ii){
-    if (Object.elt.innerText == case_question["correct_answer"]) {
+    if (Object.elt.innerText.toUpperCase() == case_question["correct_answer"].toUpperCase()) {
         object = Object.style('background-color','#00d900').style('border','none').style('color','rgb(49,49,49)');
         object = object.attribute('disabled','disabled');
         correct_button_index = ii;
         return object,correct_button_index;
-    } else if (Object.elt.innerText != case_question["correct_answer"]) {
+    } else if (Object.elt.innerText.toUpperCase() != case_question["correct_answer"].toUpperCase()) {
         object = Object.style('background-color','#ff4400').style('border','none').style('color','rgb(49,49,49)');
         object = object.attribute('disabled','disabled');
         return object;
