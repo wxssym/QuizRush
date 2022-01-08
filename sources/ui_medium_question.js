@@ -28,8 +28,10 @@ function medium_answer0_selected(){
     }
     if (correct_button_index == 0){
         isCorrect = 1;
+        sound_correct.play();
     } else{
         isCorrect = 0;
+        sound_wrong.play();
     }
     myTimeout =setTimeout(answer_verification,1000);
 }
@@ -40,8 +42,10 @@ function medium_answer1_selected(){
     }
     if (correct_button_index == 1){
         isCorrect = 1;
+        sound_correct.play();
     } else{
-        isCorrect = 0;  
+        isCorrect = 0; 
+        sound_wrong.play();
     }
     myTimeout =setTimeout(answer_verification,1000);
 }
@@ -52,8 +56,10 @@ function medium_answer2_selected(){
     }
     if (correct_button_index == 2){
         isCorrect = 1;
+        sound_correct.play();
     } else{
         isCorrect = 0;
+        sound_wrong.play();
     }
     myTimeout =setTimeout(answer_verification,1000);
 }
@@ -64,8 +70,10 @@ function medium_answer3_selected(){
     }
     if (correct_button_index == 3){
         isCorrect = 1;
+        sound_correct.play();
     } else{
         isCorrect = 0;
+        sound_wrong.play();
     }
     myTimeout = setTimeout(answer_verification,1000);
 }

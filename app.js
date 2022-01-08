@@ -1,6 +1,8 @@
 //Quiz rush
 function preload() {
   questionsDB = loadXML('database/questionsDB.xml');
+  sound_correct = loadSound('assets/correct.mp3');
+  sound_wrong = loadSound('assets/wrong.mp3');
 }
 
 function setup() {

@@ -16,8 +16,8 @@ async function ui_hard_question() {
 function hard_answer_submited(){
     correct_words = 0;
     player_hard_answer = [];
-    player_hard_answer = inputbox_HardAnswer.value().toUpperCase().split(' ');
-    correct_hard_answer = case_question["correct_answer"].split(',').join("").toUpperCase().split(' ');
+    player_hard_answer = inputbox_HardAnswer.value().normalize('NFC').toUpperCase().split(' ');
+    correct_hard_answer = case_question["correct_answer"].normalize('NFC').split(',').join("").toUpperCase().split(' ');
     for (let ii=0 ; ii < player_hard_answer.length ; ii++)
     {
         if (correct_hard_answer.includes(player_hard_answer[ii])){
@@ -26,12 +26,14 @@ function hard_answer_submited(){
     };
     if (correct_words > 0){
         isCorrect = 1;
+        sound_correct.play();
         inputbox_HardAnswer.remove();
         button_submit.remove();
         inputbox_HardAnswer = createP('<b>CORRECT: ' + case_question["correct_answer"]+'</b>').parent('hard_div').class('hard_correct_answer_style');
 
     } else {
         isCorrect = 0;
+        sound_wrong.play();
         inputbox_HardAnswer.remove();
         button_submit.remove();
         inputbox_HardAnswer = createP('<b>FALSE: ' + case_question["correct_answer"]+'</b>').parent('hard_div').class('hard_wrong_answer_style');

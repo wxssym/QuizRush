@@ -20,8 +20,11 @@ function easy_answer0_selected(){
     }
     if (correct_button_index == 0){
         isCorrect = 1;
+        sound_correct.play();
     } else{
         isCorrect = 0;
+        sound_wrong.play();
+
     }
     myTimeout =setTimeout(answer_verification,1000);
 }
@@ -33,8 +36,10 @@ function easy_answer1_selected(){
     }
     if (correct_button_index == 1){
         isCorrect = 1;
+        sound_correct.play();
     } else{
         isCorrect = 0;
+        sound_wrong.play();
     }
     myTimeout =setTimeout(answer_verification,1000);
 }

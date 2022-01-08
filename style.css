@@ -224,9 +224,9 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: center;
     align-content: center;
+    align-items: center;
 }
 
 .player_card_bot_text_style{
