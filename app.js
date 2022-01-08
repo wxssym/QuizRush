@@ -7,8 +7,7 @@ function preload() {
 
 function setup() {
   // settings object
-  settings = new settings(20);
-  // players initialisation
+  settings = new settings();
 
   // main screen ui
   ui_title_screen();

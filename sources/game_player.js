@@ -52,7 +52,7 @@ function updatePlayersList() {
       img_player_card_avatar = createImg(player_avatar,players[player_index].player_name).parent('player_card_mid').class('avatar');
       div_player_card_text = createDiv().id("player_card_mid_text").class("player_card_mid_text_style").parent("player_card_mid");
       text_player_card_name = createP('<b>'+players[player_index].player_name+'</b>').parent('player_card_mid_text').class('text_style_mid');
-      text_player_current_case = createP('<b>You are at :</b> '+players[player_index].player_case).parent('player_card_mid_text').class('text_style_mid');
+      text_player_current_case = createP('<b>You are at :</b> '+players[player_index].player_case +'/'+settings.number_of_cases).parent('player_card_mid_text').class('text_style_mid');
     }
     else if (card_position == 'bottom'){
       div_main_menu = createDiv().id("player_card_bot").class("player_card_bot_style").parent("main");
@@ -60,7 +60,7 @@ function updatePlayersList() {
       img_player_card_avatar = createImg(player_avatar,players[player_index].player_name).parent('player_card_bot').class('avatar');
       div_player_card_text = createDiv().id("player_card_bot_text").class("player_card_bot_text_style").parent("player_card_bot");
       text_player_card_name = createP('<b>Current player:</b> '+players[player_index].player_name).parent('player_card_bot_text').class('text_style_bot');
-      text_player_current_case = createP('<b>Score :</b> '+players[player_index].player_case).parent('player_card_bot_text').class('text_style_bot');
+      text_player_current_case = createP('<b>Score :</b> '+players[player_index].player_case +'/'+settings.number_of_cases).parent('player_card_bot_text').class('text_style_bot');
     }
   };
   
