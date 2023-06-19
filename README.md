@@ -12,3 +12,6 @@ First to reach 20 points (default) wins, condition can be modified in game menu 
 
 ## Questions api
 Questions are fetch to OpenTrial english questions database API.
+
+# Quiz-rush MP
+a newer quiz rush game is being developped using nodeJs express and socket io, to handle online multiplayer sessions
