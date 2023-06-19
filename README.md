@@ -14,6 +14,6 @@ First to reach 20 points (default) wins, condition can be modified in game menu 
 Questions are fetch to OpenTrial english questions database API.
 
 # Quiz-rush MP
-<img src='https://raw.githubusercontent.com/wxssym/QuizRushMP/feb32e6a22c4a4db3507ebc55a1ab2c5ea13bad2/public/assets/logo.svg'></img>
+<center><img src='https://raw.githubusercontent.com/wxssym/QuizRushMP/feb32e6a22c4a4db3507ebc55a1ab2c5ea13bad2/public/assets/logo.svg' width="200" ></img></center>
 a newer quiz rush game is being developped using nodeJs express and socket io, to handle online multiplayer sessions
 [QuizRush mp](https://github.com/wxssym/QuizRushMP)
