@@ -15,3 +15,4 @@ Questions are fetch to OpenTrial english questions database API.
 
 # Quiz-rush MP
 a newer quiz rush game is being developped using nodeJs express and socket io, to handle online multiplayer sessions
+[QuizRush mp](https://github.com/wxssym/QuizRushMP)
