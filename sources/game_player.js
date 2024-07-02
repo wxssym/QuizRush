@@ -2,7 +2,7 @@ players_names_list = [];
 function player(name) {
     this.player_name = name;
     this.player_case = 0;
-    this.AvatarUrl = 'https://api.dicebear.com/9.x/notionists/svg?seed='+this.player_name+'&size=50&backgroundColor=b6e3f4,c0aede,d1d4f9'
+    this.AvatarUrl = 'https://api.dicebear.com/9.x/notionists/svg?seed='+this.player_name+'&size=80&backgroundColor=b6e3f4,c0aede,d1d4f9'
     
     this.move_case = function (points) {
         this.player_case = this.player_case + points;
