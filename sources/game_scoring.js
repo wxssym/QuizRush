@@ -46,12 +46,15 @@ function winner (){
 }
 
 function ButtonisCorrect(Object,ii){
-    if (Object.elt.innerText.normalize('NFC').toUpperCase() == case_question["correct_answer"].normalize('NFC').toUpperCase()) {
+    let selectedAnswer = Object.elt.innerText.replace("'","");
+    let rightAnswer = case_question["correct_answer"].replace("'","");
+    
+    if (selectedAnswer.normalize('NFC').toUpperCase()  == rightAnswer.normalize('NFC').toUpperCase()) {
         object = Object.style('background-color','#00d900').style('border','none').style('color','rgb(49,49,49)');
         object = object.attribute('disabled','disabled');
         correct_button_index = ii;
         return object,correct_button_index;
-    } else if (Object.elt.innerText.normalize('NFC').toUpperCase() != case_question["correct_answer"].normalize('NFC').toUpperCase()) {
+    } else if (selectedAnswer.normalize('NFC').toUpperCase() != rightAnswer.normalize('NFC').toUpperCase()) {
         object = Object.style('background-color','#ff4400').style('border','none').style('color','rgb(49,49,49)');
         object = object.attribute('disabled','disabled');
         return object;
